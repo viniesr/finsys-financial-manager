@@ -1,10 +1,8 @@
 # FinSys
 
-FinSys é um sistema desktop de **gestão e análise financeira** desenvolvido em Python.
+Sistema desktop para **gestão e análise financeira**, desenvolvido em Python.
 
-O objetivo do projeto é transformar extratos bancários em dados estruturados, permitindo organizar movimentações financeiras, classificar transações e visualizar informações através de dashboards.
-
-O sistema pode ser utilizado tanto por **usuários que desejam controlar suas finanças pessoais**, quanto por **pequenas empresas que precisam acompanhar entradas, saídas e fluxo financeiro**.
+O projeto permite importar extratos bancários no formato **OFX**, classificar transações e visualizar dados financeiros através de **dashboards interativos com gráficos**.
 
 ---
 
@@ -33,6 +31,20 @@ Análise financeira consolidada de todo o ano, permitindo identificar padrões d
 ![Dashboard anual](docs/screenshots/dashboard_anual.png)
 
 ---
+
+## Visualização de Dados
+
+O sistema utiliza **Matplotlib integrado ao PySide6** para gerar gráficos financeiros diretamente na interface da aplicação.
+
+Os dashboards permitem visualizar:
+
+- distribuição de gastos por categoria
+- análise mensal de entradas e saídas
+- visão consolidada anual das finanças
+
+---
+
+Os gráficos são renderizados dinamicamente dentro da interface usando `FigureCanvas` do Matplotlib.
 
 # Principais funcionalidades
 
@@ -111,14 +123,14 @@ Essas informações são exibidas através de dashboards visuais que facilitam a
 
 ---
 
-# Tecnologias utilizadas
+# Tecnologias Utilizadas
 
-* Python 3
-* PySide6 (Qt for Python)
-* Qt Designer
-* SQLite
-* ReportLab
-* OFX Parser
+- Python 3
+- PySide6 (Qt for Python) — interface gráfica desktop
+- SQLite — armazenamento local de dados
+- Matplotlib — geração de gráficos financeiros
+- ReportLab — geração de relatórios em PDF
+- OFXParse — leitura e interpretação de extratos bancários OFX
 
 ---
 
