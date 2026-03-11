@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="/">
+    <file>assets/add.svg</file>
+    <file>assets/excluir.svg</file>
+    <file>assets/consulta.svg</file>
+    <file>assets/dashanual.svg</file>
+    <file>assets/dashmensal.svg</file>
+    <file>assets/home.svg</file>
+    <file>assets/ramostransplogo25.png</file>
+    <file>assets/ramostransplogowhite.png</file>
+    <file>assets/romaneios.svg</file>
+    <file>assets/upload.svg</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,3006 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1614</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(250, 250, 250);</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QFrame" name="sidebar">
+        <property name="minimumSize">
+         <size>
+          <width>300</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #1f2937;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <spacer name="verticalSpacer_6">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Policy::Maximum</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLabel" name="tit_finsys">
+           <property name="font">
+            <font>
+             <family>Montserrat</family>
+             <pointsize>48</pointsize>
+             <italic>false</italic>
+             <fontweight>ExtraBold</fontweight>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LayoutDirection::LeftToRight</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+	color: rgb(255, 255, 255);
+	text-align: center;
+	font: 800 48pt &quot;Montserrat&quot;;
+}</string>
+           </property>
+           <property name="text">
+            <string>Finsys</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Policy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>30</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QFrame" name="frameDashSide">
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="topMargin">
+             <number>3</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <property name="bottomMargin">
+             <number>3</number>
+            </property>
+            <item>
+             <widget class="QPushButton" name="btn_home">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    font: 600 12pt &quot;Montserrat&quot;;
+    outline: none;
+    background-color: rgb(54, 71, 95);
+    color: white;
+    border: none;
+	spacing: 50px;
+    
+    /* Ajuste de Respiro Lateral */
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 15px; 
+    
+    text-align: left;
+    border-radius: 12px;
+
+    /* O PULO DO GATO: */
+    /* Se o spacing não vai, o text-indent empurra o texto para a direita */
+    text-indent: 15px; 
+}
+
+QPushButton:hover {
+    background-color: #374151;
+}</string>
+              </property>
+              <property name="text">
+               <string>home</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../recursos.qrc">
+                <normaloff>:/assets/home.svg</normaloff>:/assets/home.svg</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btn_mensal">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    font: 600 12pt &quot;Montserrat&quot;;
+    outline: none;
+    background-color: rgb(54, 71, 95);
+    color: white;
+    border: none;
+    
+    /* Ajuste de Respiro Lateral */
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 15px; 
+    
+    text-align: left;
+    border-radius: 12px;
+
+    /* O PULO DO GATO: */
+    /* Se o spacing não vai, o text-indent empurra o texto para a direita */
+    text-indent: 15px; 
+}
+
+QPushButton:hover {
+    background-color: #374151;
+}</string>
+              </property>
+              <property name="text">
+               <string>dashboard mensal</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../recursos.qrc">
+                <normaloff>:/assets/dashmensal.svg</normaloff>:/assets/dashmensal.svg</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btn_anual">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    font: 600 12pt &quot;Montserrat&quot;;
+    outline: none;
+    background-color: rgb(54, 71, 95);
+    color: white;
+    border: none;
+    
+    /* Ajuste de Respiro Lateral */
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 15px; 
+    
+    text-align: left;
+    border-radius: 12px;
+
+    /* O PULO DO GATO: */
+    /* Se o spacing não vai, o text-indent empurra o texto para a direita */
+    text-indent: 15px; 
+}
+
+QPushButton:hover {
+    background-color: #374151;
+}</string>
+              </property>
+              <property name="text">
+               <string>dashboard anual</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../recursos.qrc">
+                <normaloff>:/assets/dashanual.svg</normaloff>:/assets/dashanual.svg</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QFrame" name="frameLogoSide">
+           <property name="frameShape">
+            <enum>QFrame::Shape::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Shadow::Raised</enum>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="logoRamos">
+              <property name="maximumSize">
+               <size>
+                <width>250</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap resource="../recursos.qrc">:/assets/ramostransplogowhite.png</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignmentFlag::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frameRamosSide">
+           <property name="frameShape">
+            <enum>QFrame::Shape::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Shadow::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_28">
+            <property name="spacing">
+             <number>6</number>
+            </property>
+            <property name="topMargin">
+             <number>3</number>
+            </property>
+            <property name="bottomMargin">
+             <number>3</number>
+            </property>
+            <item>
+             <widget class="QPushButton" name="btn_romaneios">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    font: 600 12pt &quot;Montserrat&quot;;
+    outline: none;
+    background-color: rgb(54, 71, 95);
+    color: white;
+    border: none;
+    
+    /* Ajuste de Respiro Lateral */
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 15px; 
+    
+    text-align: left;
+    border-radius: 12px;
+
+    /* O PULO DO GATO: */
+    /* Se o spacing não vai, o text-indent empurra o texto para a direita */
+    text-indent: 15px; 
+}
+
+QPushButton:hover {
+    background-color: #374151;
+}</string>
+              </property>
+              <property name="text">
+               <string>romaneios</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../recursos.qrc">
+                <normaloff>:/assets/romaneios.svg</normaloff>:/assets/romaneios.svg</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btn_consulta_romaneios">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    font: 600 12pt &quot;Montserrat&quot;;
+    outline: none;
+    background-color: rgb(54, 71, 95);
+    color: white;
+    border: none;
+    
+    /* Ajuste de Respiro Lateral */
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 15px; 
+    
+    text-align: left;
+    border-radius: 12px;
+
+    /* O PULO DO GATO: */
+    /* Se o spacing não vai, o text-indent empurra o texto para a direita */
+    text-indent: 15px; 
+}
+
+QPushButton:hover {
+    background-color: #374151;
+}</string>
+              </property>
+              <property name="text">
+               <string>consulta romaneios</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../recursos.qrc">
+                <normaloff>:/assets/consulta.svg</normaloff>:/assets/consulta.svg</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_5">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Policy::Maximum</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QStackedWidget" name="stackedWidget">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <widget class="QWidget" name="pageInicio">
+         <layout class="QVBoxLayout" name="verticalLayout_3" stretch="1">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_26" stretch="0,0,0,0">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item>
+             <spacer name="verticalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Orientation::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Policy::Expanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>250</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QFrame" name="frameBemVindo">
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_27">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="tit_sejabem_home">
+                 <property name="styleSheet">
+                  <string notr="true">font: 700 26pt &quot;Montserrat&quot;;</string>
+                 </property>
+                 <property name="text">
+                  <string>seja bem vindo ao Finsys!</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignmentFlag::AlignBottom|Qt::AlignmentFlag::AlignHCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="tit_envie_home">
+                 <property name="styleSheet">
+                  <string notr="true">font: 500 12pt &quot;Montserrat&quot;;</string>
+                 </property>
+                 <property name="text">
+                  <string>envie aqui seu extrato OFX</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignmentFlag::AlignBottom|Qt::AlignmentFlag::AlignHCenter</set>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="frameBtn_home">
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_6">
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <spacer name="horizontalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Orientation::Horizontal</enum>
+                 </property>
+                 <property name="sizeType">
+                  <enum>QSizePolicy::Policy::Maximum</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>300</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btn_upload_home">
+                 <property name="maximumSize">
+                  <size>
+                   <width>500</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+	font: 700 18pt &quot;Montserrat&quot;;
+    outline: none;
+	background-color: rgb(54, 71, 95);
+    color: white;
+    border: none;
+    padding: 6px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+QPushButton:hover {
+    background-color: #374151;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>upload</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="../recursos.qrc">
+                   <normaloff>:/assets/upload.svg</normaloff>:/assets/upload.svg</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>20</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_2">
+                 <property name="orientation">
+                  <enum>Qt::Orientation::Horizontal</enum>
+                 </property>
+                 <property name="sizeType">
+                  <enum>QSizePolicy::Policy::Maximum</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>300</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="frameStatus_home">
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_29">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="statusHome">
+                 <property name="styleSheet">
+                  <string notr="true">font: 500 12pt &quot;Montserrat&quot;;</string>
+                 </property>
+                 <property name="text">
+                  <string>nenhum arquivo importado</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_4">
+                 <property name="orientation">
+                  <enum>Qt::Orientation::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="pageMensal">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>679</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <property name="leftMargin">
+           <number>20</number>
+          </property>
+          <property name="topMargin">
+           <number>20</number>
+          </property>
+          <property name="rightMargin">
+           <number>20</number>
+          </property>
+          <property name="bottomMargin">
+           <number>20</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="frameHead_mes">
+            <property name="frameShape">
+             <enum>QFrame::Shape::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Shadow::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_34">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="tit_dashanual_3">
+               <property name="styleSheet">
+                <string notr="true">font: 600 28pt &quot;Montserrat&quot;;</string>
+               </property>
+               <property name="text">
+                <string>dashboard Mensal</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="subtit_dashanual_3">
+               <property name="styleSheet">
+                <string notr="true">font: 500 10pt &quot;Montserrat&quot;;</string>
+               </property>
+               <property name="text">
+                <string>visualize e adicione transações em sua movimentação mensal, com gráficos e estatísticas.</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="layoutCards" stretch="1,1,2,2,2">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QFrame" name="frameMes_mes">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_15">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>9</number>
+               </property>
+               <property name="topMargin">
+                <number>9</number>
+               </property>
+               <property name="bottomMargin">
+                <number>9</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="tit_mes_mes">
+                 <property name="styleSheet">
+                  <string notr="true">
+background-color: #34495e; 
+color: white;
+font: 700 14pt &quot;Montserrat&quot;;
+padding: 5px;</string>
+                 </property>
+                 <property name="text">
+                  <string>mês</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignmentFlag::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="messeletor_mes">
+                 <property name="styleSheet">
+                  <string notr="true">QComboBox {
+    background-color: #1f2937;
+    color: white;
+    border: none;
+    padding: 6px;
+	padding-left: 10px;
+	font: 600 17pt &quot;Montserrat&quot;;
+	text-align: center;
+}
+</string>
+                 </property>
+                 <property name="maxVisibleItems">
+                  <number>12</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>janeiro</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>fevereiro</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>março</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>abril</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>maio</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>junho</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>julho</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>agosto</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>setembro</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>outubro</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>novembro</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>dezembro</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="frameAno_mes">
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_16">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>9</number>
+               </property>
+               <property name="topMargin">
+                <number>9</number>
+               </property>
+               <property name="rightMargin">
+                <number>9</number>
+               </property>
+               <property name="bottomMargin">
+                <number>9</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="tit_ano_mes">
+                 <property name="styleSheet">
+                  <string notr="true">
+background-color: #34495e; 
+color: white;
+font: 700 14pt &quot;Montserrat&quot;;
+padding: 5px;</string>
+                 </property>
+                 <property name="text">
+                  <string>ano</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignmentFlag::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="anoseletor_mes">
+                 <property name="styleSheet">
+                  <string notr="true">QComboBox {
+    background-color: #1f2937;
+    color: white;
+    border: none;
+    padding: 6px;
+	padding-left: 10px;
+	font: 600 17pt &quot;Montserrat&quot;;
+}
+</string>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>2026</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="frameEntradas_mes">
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_10">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="tit_totalentradas_mes">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: #00FF9D; 
+color: #1A1A1A; 
+font: 700 14pt &quot;Montserrat&quot;;
+padding: 5px;</string>
+                 </property>
+                 <property name="text">
+                  <string>total Entradas</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="valor_totalentradas_mes">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: #00BD74; 
+color: white; 
+font-size: 18px; 
+font: 800 18pt &quot;Montserrat&quot;;
+padding: 6px;</string>
+                 </property>
+                 <property name="text">
+                  <string>R$ 0,00</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="frameSaidas_mes">
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_9">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="tit_totalsaidas_mes">
+                 <property name="styleSheet">
+                  <string notr="true">
+background-color: #D32F2F;
+color: white; 
+font: 700 14pt &quot;Montserrat&quot;;
+padding: 5px;</string>
+                 </property>
+                 <property name="text">
+                  <string>total Saídas</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="valor_totalsaidas_mes">
+                 <property name="styleSheet">
+                  <string notr="true">
+background-color: #9B1C1C;
+color: white; 
+font-size: 18px; 
+font: 800 18pt &quot;Montserrat&quot;;
+padding: 6px;</string>
+                 </property>
+                 <property name="text">
+                  <string>R$ 0,00</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="frameSituacao_mes">
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_8">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="tit_situacao_mes">
+                 <property name="styleSheet">
+                  <string notr="true">background-color:  #333333;
+color: white;
+font: 700 14pt &quot;Montserrat&quot;;
+padding: 5px;</string>
+                 </property>
+                 <property name="text">
+                  <string>situação</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="statussituacao_mes">
+                 <property name="styleSheet">
+                  <string notr="true">
+background-color: #1A1A1A;
+color: white; 
+font-size: 18px; 
+font: 800 18pt &quot;Montserrat&quot;;
+padding: 6px;</string>
+                 </property>
+                 <property name="text">
+                  <string>positiva</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="layoutGraficos_mes">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <item>
+             <widget class="QFrame" name="graficoentradas_mes">
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_12">
+               <property name="leftMargin">
+                <number>9</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>9</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QWidget" name="grafEntr" native="true">
+                 <layout class="QVBoxLayout" name="verticalLayout_14">
+                  <property name="leftMargin">
+                   <number>9</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>9</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="tit_graficoentradas_mes">
+                    <property name="text">
+                     <string>grafico de entradas</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="graficosaidas_mes">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>200</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_11">
+               <property name="leftMargin">
+                <number>9</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>9</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QWidget" name="grafSaid" native="true">
+                 <layout class="QVBoxLayout" name="verticalLayout_13">
+                  <property name="leftMargin">
+                   <number>9</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>9</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="tit_graficosaidas_mes">
+                    <property name="text">
+                     <string>grafico de saídas</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="layoutTabelas_mes" stretch="1,1">
+            <item>
+             <widget class="QFrame" name="frameEntradasTab_mes">
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_6">
+               <item>
+                <widget class="QLabel" name="tituloentradasTab_mes">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: #00FF9D; 
+color: #1A1A1A; 
+font: 700 16pt &quot;Montserrat&quot;;
+padding: 5px;
+border: 1px solid black;</string>
+                 </property>
+                 <property name="text">
+                  <string>entradas</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignmentFlag::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QTableWidget" name="entradasTab_mes">
+                 <property name="font">
+                  <font>
+                   <family>Montserrat</family>
+                   <pointsize>14</pointsize>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">/* Estilo do Cabeçalho */
+QHeaderView::section {
+    background-color: #00BD74;; /* Use #c0392b para a tabela de Saídas */
+    color: black;
+    padding: 4px;
+    font-weight: bold;
+    border: 1px solid black; /* Remove a borda padrão grossa */ 
+	font: 700 12pt &quot;Montserrat&quot;;
+}
+
+/* Estilo do Corpo da Tabela */
+QTableWidget {
+    gridline-color: #e0e0e0; /* Cor da linha que separa as células (cinza claro) */
+    background-color: white;
+    alternate-background-color: #f9f9f9; /* Cor para linhas alternadas, se ativado */
+    selection-background-color: #d5f5e3; /* Cor de destaque ao clicar (verde claro) */
+    selection-color: #27ae60;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+}</string>
+                 </property>
+                 <property name="editTriggers">
+                  <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+                 </property>
+                 <property name="selectionMode">
+                  <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
+                 </property>
+                 <property name="selectionBehavior">
+                  <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+                 </property>
+                 <attribute name="horizontalHeaderCascadingSectionResizes">
+                  <bool>false</bool>
+                 </attribute>
+                 <attribute name="horizontalHeaderDefaultSectionSize">
+                  <number>150</number>
+                 </attribute>
+                 <attribute name="horizontalHeaderStretchLastSection">
+                  <bool>true</bool>
+                 </attribute>
+                 <attribute name="verticalHeaderCascadingSectionResizes">
+                  <bool>false</bool>
+                 </attribute>
+                 <column>
+                  <property name="text">
+                   <string>id</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>data</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>descrição</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>categoria</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>valor</string>
+                  </property>
+                 </column>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="frameSaidasTab_mes">
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_7">
+               <item>
+                <widget class="QLabel" name="titulosaidasTab_mes">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: #D32F2F;
+color: rgb(255, 255, 255);
+font: 700 16pt &quot;Montserrat&quot;;
+padding: 5px;
+border: 1px solid black;</string>
+                 </property>
+                 <property name="text">
+                  <string>saídas</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignmentFlag::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QTableWidget" name="saidasTab_mes">
+                 <property name="font">
+                  <font>
+                   <family>Montserrat</family>
+                   <pointsize>14</pointsize>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">/* Estilo do Cabeçalho */
+QHeaderView::section {
+    background-color: #9B1C1C; /* Use # para a tabela de Saídas */
+    color: white;
+    padding: 4px;
+    font-weight: bold;
+    border: 1px solid black; /* Remove a borda padrão grossa */ 
+	font: 700 12pt &quot;Montserrat&quot;;
+}
+
+/* Estilo do Corpo da Tabela */
+QTableWidget {
+    gridline-color: #e0e0e0; /* Cor da linha que separa as células (cinza claro) */
+    background-color: white;
+    alternate-background-color: #f9f9f9; /* Cor para linhas alternadas, se ativado */
+    selection-background-color: #d5f5e3; /* Cor de destaque ao clicar (verde claro) */
+    selection-color: #27ae60;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+}</string>
+                 </property>
+                 <attribute name="horizontalHeaderVisible">
+                  <bool>true</bool>
+                 </attribute>
+                 <attribute name="horizontalHeaderDefaultSectionSize">
+                  <number>150</number>
+                 </attribute>
+                 <attribute name="horizontalHeaderStretchLastSection">
+                  <bool>true</bool>
+                 </attribute>
+                 <column>
+                  <property name="text">
+                   <string>id</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>data</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>descrição</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>categoria</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>valor</string>
+                  </property>
+                 </column>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="pageAnual">
+         <layout class="QVBoxLayout" name="verticalLayout_18" stretch="0,2,2,8,8">
+          <property name="leftMargin">
+           <number>20</number>
+          </property>
+          <property name="topMargin">
+           <number>20</number>
+          </property>
+          <property name="rightMargin">
+           <number>20</number>
+          </property>
+          <property name="bottomMargin">
+           <number>20</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="frameHead">
+            <property name="frameShape">
+             <enum>QFrame::Shape::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Shadow::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_17">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="tit_dashanual">
+               <property name="styleSheet">
+                <string notr="true">font: 600 28pt &quot;Montserrat&quot;;</string>
+               </property>
+               <property name="text">
+                <string>dashboard Anual</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="subtit_dashanual">
+               <property name="styleSheet">
+                <string notr="true">font: 500 10pt &quot;Montserrat&quot;;</string>
+               </property>
+               <property name="text">
+                <string>visualize sua movimentação anual, com gráficos e estatísticas.</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="frameAnual">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <item>
+             <widget class="QComboBox" name="seletor_ano_anual">
+              <property name="styleSheet">
+               <string notr="true">QComboBox {
+    background-color: #1f2937; /* Um tom mais escuro que o de cima */
+    color: white;
+    border: none;
+    padding: 4px;
+	padding-left: 30px;
+	font: 600 17pt &quot;Montserrat&quot;;
+}
+</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>2026</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Orientation::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Policy::Maximum</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="gerar_pdf_anual">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">/* Use o # para apontar exatamente para o nome do objeto */
+QPushButton#gerar_pdf_anual {
+    background-color: #e63946; /* Vermelho Ramos */
+    color: white;
+	font: 800 14pt &quot;Montserrat&quot;;
+    font-weight: bold;
+    border-radius: 0px;
+padding:8px;
+}
+
+QPushButton#gerar_pdf_anual:hover {
+    background-color: #c1272d; /* Vermelho mais escuro ao passar o mouse */
+}</string>
+              </property>
+              <property name="text">
+               <string>gerar PDF</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="frameCardsAnual">
+            <item>
+             <widget class="QFrame" name="entradas">
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_19">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="tit_totalentradas_anual">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: #00FF9D; 
+color: #1A1A1A; 
+font: 700 14pt &quot;Montserrat&quot;;
+padding: 5px;</string>
+                 </property>
+                 <property name="text">
+                  <string>total Entradas</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="valor_totalentradas_anual">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>100</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: #00BD74; 
+color: white; 
+font-size: 18px; 
+font: 800 18pt &quot;Montserrat&quot;;
+padding: 6px;</string>
+                 </property>
+                 <property name="text">
+                  <string>R$ 0,00</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignmentFlag::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="saidas">
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_20">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="tit_totalsaidas_anual">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">
+background-color: #D32F2F;
+color: white; 
+font: 700 14pt &quot;Montserrat&quot;;
+padding: 5px;</string>
+                 </property>
+                 <property name="text">
+                  <string>total Saídas</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="valor_totalsaidas_anual">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>100</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">
+background-color: #9B1C1C;
+color: white; 
+font-size: 18px; 
+font: 800 18pt &quot;Montserrat&quot;;
+padding: 6px;</string>
+                 </property>
+                 <property name="text">
+                  <string>R$ 0,00</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignmentFlag::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="saldo">
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_21">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="tit_saldo_anual">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color:  #2c3e50;
+color: white;
+font: 700 14pt &quot;Montserrat&quot;;
+padding: 5px;
+
+</string>
+                 </property>
+                 <property name="text">
+                  <string>saldo</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="valor_saldo_anual">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>100</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">
+background-color: #1a252f;
+color: white; 
+font-size: 18px; 
+font: 800 18pt &quot;Montserrat&quot;;
+padding: 6px;</string>
+                 </property>
+                 <property name="text">
+                  <string>R$ 0,00</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignmentFlag::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="media">
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_22">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="tit_media_anual">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color:  #7f8c8d;
+color: white;
+font: 700 14pt &quot;Montserrat&quot;;
+padding: 5px;</string>
+                 </property>
+                 <property name="text">
+                  <string>média</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="valor_media_anual">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>100</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">
+background-color: #2c3e50;
+color: white; 
+font-size: 18px; 
+font: 800 18pt &quot;Montserrat&quot;;
+padding: 6px;</string>
+                 </property>
+                 <property name="text">
+                  <string>R$ 0,00</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignmentFlag::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="frameGrafEvo">
+            <item>
+             <widget class="QFrame" name="graficoevo">
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_23">
+               <item>
+                <widget class="QLabel" name="tit_graficoevo_anual">
+                 <property name="text">
+                  <string>gráfico de Evolução</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop</set>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="frameGrafEntSai">
+            <item>
+             <widget class="QFrame" name="graf_principais_gastos_anual">
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_24">
+               <item>
+                <widget class="QLabel" name="tit_principaisgastos_anual">
+                 <property name="text">
+                  <string>principais Gastos</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop</set>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="graf_principais_entradas_anual">
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_25">
+               <item>
+                <widget class="QLabel" name="tit_principaisentradas_anual">
+                 <property name="text">
+                  <string>principais Entradas</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop</set>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="pageRamos">
+         <layout class="QVBoxLayout" name="verticalLayout_30">
+          <property name="leftMargin">
+           <number>45</number>
+          </property>
+          <property name="topMargin">
+           <number>20</number>
+          </property>
+          <property name="rightMargin">
+           <number>45</number>
+          </property>
+          <property name="bottomMargin">
+           <number>20</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="frameHead_romaneios">
+            <property name="frameShape">
+             <enum>QFrame::Shape::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Shadow::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_35">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="tit_romaneios">
+               <property name="styleSheet">
+                <string notr="true">font: 600 28pt &quot;Montserrat&quot;;</string>
+               </property>
+               <property name="text">
+                <string>romaneios RT</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="subtit_romaneios">
+               <property name="styleSheet">
+                <string notr="true">font: 500 10pt &quot;Montserrat&quot;;</string>
+               </property>
+               <property name="text">
+                <string>gere notas de romaneios de forma prática e rápida.</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="cabecalho">
+            <property name="frameShape">
+             <enum>QFrame::Shape::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Shadow::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_10">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QFrame" name="frameLogo">
+               <property name="maximumSize">
+                <size>
+                 <width>200</width>
+                 <height>60</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Shape::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Shadow::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_11">
+                <item>
+                 <widget class="QLabel" name="logoRamosRomaneio">
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="pixmap">
+                   <pixmap resource="../recursos.qrc">:/assets/ramostransplogo25.png</pixmap>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="romaneiospaulo">
+               <property name="styleSheet">
+                <string notr="true">font: 700 12pt &quot;Montserrat&quot;;</string>
+               </property>
+               <property name="text">
+                <string>romaneios - Paulo</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="inicionota">
+               <property name="styleSheet">
+                <string notr="true">font: 700 12pt &quot;Montserrat&quot;;</string>
+               </property>
+               <property name="text">
+                <string>início da nota</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDateEdit" name="datanota">
+               <property name="styleSheet">
+                <string notr="true">font: 700 12pt &quot;Montserrat&quot;;
+color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+               <property name="dateTime">
+                <datetime>
+                 <hour>15</hour>
+                 <minute>0</minute>
+                 <second>0</second>
+                 <year>2026</year>
+                 <month>1</month>
+                 <day>1</day>
+                </datetime>
+               </property>
+               <property name="calendarPopup">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="linhavermelha">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>3</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 0, 4);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Shape::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Shadow::Raised</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="inserir">
+            <property name="frameShape">
+             <enum>QFrame::Shape::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Shadow::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QDateEdit" name="dateViagem">
+               <property name="styleSheet">
+                <string notr="true">font: 500 12pt &quot;Montserrat&quot;;
+color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+               <property name="dateTime">
+                <datetime>
+                 <hour>0</hour>
+                 <minute>0</minute>
+                 <second>0</second>
+                 <year>2026</year>
+                 <month>1</month>
+                 <day>1</day>
+                </datetime>
+               </property>
+               <property name="time">
+                <time>
+                 <hour>0</hour>
+                 <minute>0</minute>
+                 <second>0</second>
+                </time>
+               </property>
+               <property name="calendarPopup">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="inserirOS">
+               <property name="styleSheet">
+                <string notr="true">font: 500 12pt &quot;Montserrat&quot;;</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+               <property name="placeholderText">
+                <string>digite o n° da OS</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="styleSheet">
+                <string notr="true">font: 500 12pt &quot;Montserrat&quot;;</string>
+               </property>
+               <property name="text">
+                <string>digite ou selecione o destino</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBox">
+               <property name="styleSheet">
+                <string notr="true">/* 1. Caixa Principal - Ajustada para bater com os QLineEdit */
+QComboBox {
+    border: 1px solid #a9a9a9;
+    border-radius: 0px; /* Mantive 0px como você deixou */
+    padding: 1px 4px;
+    font-family: &quot;Montserrat&quot;;
+    font-size: 12pt;
+    color: #2c3e50;
+    background-color: white;
+    min-height: 20px; /* Aumentei um pouco para não cortar o texto 12pt */
+}
+/* Ajuste da área da seta */
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px; 
+    border-left: 1px solid #d1d1d1; /* Linha de separação fina */
+    background-color: #f9f9f9; 
+}
+
+/* O desenho da seta - Versão Fina */
+QComboBox::down-arrow {
+    image: none; 
+    border-left: 3px solid transparent;   /* Largura da base do triângulo */
+    border-right: 3px solid transparent;  /* Largura da base do triângulo */
+    border-top: 5px solid #555555;        /* Altura e cor da seta */
+    margin-top: 2px;                      /* Centraliza verticalmente */
+}
+
+/* 4. Lista Suspensa */
+QAbstractItemView {
+    border: 1px solid #d1d1d1;
+    selection-background-color: #e63946; 
+    background-color: white;
+    outline: none;
+    padding: 5px;
+}
+
+/* 5. Scrollbar Vertical (Sua barra fininha personalizada) */
+QScrollBar:vertical {
+    border: none;
+    background: #f1f1f1;
+    width: 8px; 
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #bcbcbc;
+    min-height: 20px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #e63946; 
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}</string>
+               </property>
+               <property name="editable">
+                <bool>true</bool>
+               </property>
+               <property name="placeholderText">
+                <string>digite ou selecione o destino</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>santa maria - DF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>águas claras - DF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>gama - DF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>lago sul - DF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>lago norte - DF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>asa sul - DF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>asa norte - DF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>taguatinga - DF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>ceilândia - DF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>riacho fundo I - DF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>riacho fundo II - DF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>samambaia - DF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>fercal - DF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>guará - DF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>formosa - DF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>valparaíso de goiás - GO</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>águas lindas de goiás - GO</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>jardim ingá - GO</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>cidade ocidental - GO</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>novo gama - GO</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>planaltina - GO</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>santo antônio do descoberto - GO</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="inserirValor">
+               <property name="styleSheet">
+                <string notr="true">font: 500 12pt &quot;Montserrat&quot;;</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+               <property name="placeholderText">
+                <string>digite o valor</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_3">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="adicionarOS">
+               <property name="minimumSize">
+                <size>
+                 <width>150</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 700 12pt &quot;Montserrat&quot;;
+    outline: none;
+	padding: 6px;
+background-color: rgb(170, 0, 0);
+    color: white;
+    border: none;
+    text-align: center;
+    border-radius: 0px;</string>
+               </property>
+               <property name="text">
+                <string>adicionar</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../recursos.qrc">
+                 <normaloff>:/assets/add.svg</normaloff>:/assets/add.svg</iconset>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_excluir_lancamento">
+               <property name="minimumSize">
+                <size>
+                 <width>150</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 700 12pt &quot;Montserrat&quot;;
+    outline: none;
+	padding: 6px;
+background-color: rgb(170, 0, 0);
+    color: white;
+    border: none;
+    text-align: center;
+    border-radius: 0px;</string>
+               </property>
+               <property name="text">
+                <string>excluir</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../recursos.qrc">
+                 <normaloff>:/assets/excluir.svg</normaloff>:/assets/excluir.svg</iconset>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTableWidget" name="tabelaRomaneio">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(0, 0, 0);
+font: 500 12pt &quot;Montserrat&quot;;
+text-align: center;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="rodape">
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Montserrat&quot;;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Shape::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Shadow::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_9" stretch="1,0,1,1,1,1,2,0,4">
+             <item>
+              <widget class="QLabel" name="qtdOS">
+               <property name="text">
+                <string>qtd OS</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_4">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="valorOS">
+               <property name="text">
+                <string>0</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="totGeral">
+               <property name="text">
+                <string>total Geral</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_5">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="valorGer">
+               <property name="text">
+                <string>R$ 0,00</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_2">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="salvarPDF">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 600 12pt &quot;Montserrat&quot;;
+    outline: none;
+	padding: 6px;
+background-color: rgb(170, 0, 0);
+    color: white;
+    border: none;
+    text-align: center;
+    border-radius: 0px;</string>
+               </property>
+               <property name="text">
+                <string>salvar e gerar PDF</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="pageRamosConsulta">
+         <layout class="QVBoxLayout" name="verticalLayout_32">
+          <property name="leftMargin">
+           <number>45</number>
+          </property>
+          <property name="topMargin">
+           <number>20</number>
+          </property>
+          <property name="rightMargin">
+           <number>45</number>
+          </property>
+          <property name="bottomMargin">
+           <number>20</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="frameHead_consulta">
+            <property name="frameShape">
+             <enum>QFrame::Shape::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Shadow::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_36">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="tit_consulta">
+               <property name="styleSheet">
+                <string notr="true">font: 600 28pt &quot;Montserrat&quot;;</string>
+               </property>
+               <property name="text">
+                <string>consulta Romaneios</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="subtit_consulta">
+               <property name="styleSheet">
+                <string notr="true">font: 500 10pt &quot;Montserrat&quot;;</string>
+               </property>
+               <property name="text">
+                <string>procure por romaneios específicos através do banco de dados.</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="cabecalho_consulta">
+            <property name="styleSheet">
+             <string notr="true">font: 500 12pt &quot;Montserrat&quot;;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Shape::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Shadow::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="tit_de">
+               <property name="text">
+                <string>de</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDateEdit" name="datainicial_consulta">
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0, 0, 0);
+border-color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="buttonSymbols">
+                <enum>QAbstractSpinBox::ButtonSymbols::UpDownArrows</enum>
+               </property>
+               <property name="showGroupSeparator" stdset="0">
+                <bool>false</bool>
+               </property>
+               <property name="dateTime">
+                <datetime>
+                 <hour>15</hour>
+                 <minute>0</minute>
+                 <second>0</second>
+                 <year>2026</year>
+                 <month>1</month>
+                 <day>1</day>
+                </datetime>
+               </property>
+               <property name="calendarPopup">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="tit_ate">
+               <property name="text">
+                <string>até</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDateEdit" name="datafinal_consulta">
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="dateTime">
+                <datetime>
+                 <hour>15</hour>
+                 <minute>0</minute>
+                 <second>0</second>
+                 <year>2026</year>
+                 <month>1</month>
+                 <day>1</day>
+                </datetime>
+               </property>
+               <property name="calendarPopup">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_4">
+               <property name="orientation">
+                <enum>Qt::Orientation::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Policy::Maximum</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>100</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit">
+               <property name="styleSheet">
+                <string notr="true">font: 500 12pt &quot;Montserrat&quot;;</string>
+               </property>
+               <property name="placeholderText">
+                <string>digite o n° da OS</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_2">
+               <property name="styleSheet">
+                <string notr="true">font: 500 12pt &quot;Montserrat&quot;;</string>
+               </property>
+               <property name="text">
+                <string>digite ou selecione o destino</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="combo_destino_consulta">
+               <property name="styleSheet">
+                <string notr="true">/* 1. Caixa Principal - Ajustada para bater com os QLineEdit */
+QComboBox {
+    border: 1px solid #a9a9a9;
+    border-radius: 0px; /* Mantive 0px como você deixou */
+    padding: 1px 4px;
+    font-family: &quot;Montserrat&quot;;
+    font-size: 12pt;
+    color: #2c3e50;
+    background-color: white;
+    min-height: 20px; /* Aumentei um pouco para não cortar o texto 12pt */
+}
+/* Ajuste da área da seta */
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px; 
+    border-left: 1px solid #d1d1d1; /* Linha de separação fina */
+    background-color: #f9f9f9; 
+}
+
+/* O desenho da seta - Versão Fina */
+QComboBox::down-arrow {
+    image: none; 
+    border-left: 3px solid transparent;   /* Largura da base do triângulo */
+    border-right: 3px solid transparent;  /* Largura da base do triângulo */
+    border-top: 5px solid #555555;        /* Altura e cor da seta */
+    margin-top: 2px;                      /* Centraliza verticalmente */
+}
+
+/* 4. Lista Suspensa */
+QAbstractItemView {
+    border: 1px solid #d1d1d1;
+    selection-background-color: #e63946; 
+    background-color: white;
+    outline: none;
+    padding: 5px;
+}
+
+/* 5. Scrollbar Vertical (Sua barra fininha personalizada) */
+QScrollBar:vertical {
+    border: none;
+    background: #f1f1f1;
+    width: 8px; 
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #bcbcbc;
+    min-height: 20px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #e63946; 
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}</string>
+               </property>
+               <property name="editable">
+                <bool>true</bool>
+               </property>
+               <property name="placeholderText">
+                <string>digite ou selecione o destino</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>selecionar</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>santa maria - DF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>águas claras - DF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>gama - DF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>lago sul - DF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>lago norte - DF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>asa sul - DF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>asa norte - DF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>taguatinga - DF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>ceilândia - DF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>riacho fundo I - DF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>riacho fundo II - DF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>samambaia - DF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>fercal - DF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>guará - DF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>formosa - DF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>valparaíso de goiás - GO</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>águas lindas de goiás - GO</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>jardim ingá - GO</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>cidade ocidental - GO</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>novo gama - GO</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>planaltina - GO</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>santo antônio do descoberto - GO</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_listar_consulta">
+               <property name="minimumSize">
+                <size>
+                 <width>150</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 700 12pt &quot;Montserrat&quot;;
+    outline: none;
+	padding: 6px;
+background-color: rgb(170, 0, 0);
+    color: white;
+    border: none;
+    text-align: center;
+    border-radius: 0px;</string>
+               </property>
+               <property name="text">
+                <string>listar</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_limpar_consulta">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 700 12pt &quot;Montserrat&quot;;
+    outline: none;
+	padding: 6px;
+background-color: rgb(109, 0, 0);
+    color: white;
+    border: none;
+    text-align: center;
+    border-radius: 0px;</string>
+               </property>
+               <property name="text">
+                <string>limpar consulta</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTableWidget" name="tableWidget">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">/* Estilo do Cabeçalho */
+QHeaderView::section {
+    background-color: rgb(170, 0, 0);
+    color: white;
+    padding: 4px;
+    font-weight: bold;
+    border: 1px solid black; /* Remove a borda padrão grossa */ 
+	font: 700 12pt &quot;Montserrat&quot;;
+}
+
+/* Estilo do Corpo da Tabela */
+QTableWidget {
+    gridline-color: #e0e0e0; /* Cor da linha que separa as células (cinza claro) */
+    background-color: white;
+    alternate-background-color: #f9f9f9; /* Cor para linhas alternadas, se ativado */
+    selection-background-color: #d5f5e3; /* Cor de destaque ao clicar (verde claro) */
+    selection-color: #27ae60;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+}</string>
+            </property>
+            <attribute name="horizontalHeaderDefaultSectionSize">
+             <number>200</number>
+            </attribute>
+            <attribute name="horizontalHeaderStretchLastSection">
+             <bool>true</bool>
+            </attribute>
+            <column>
+             <property name="text">
+              <string>data</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>OS</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>destino</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>valor</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="rodape_consulta">
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Montserrat&quot;;</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_13">
+             <item>
+              <widget class="QLabel" name="qtdos_consulta">
+               <property name="text">
+                <string>qtd OS</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_7">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="valoros_consulta">
+               <property name="text">
+                <string>0</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_8">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="totalgeral_consulta">
+               <property name="text">
+                <string>total Geral</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_6">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="valorgeral_consulta">
+               <property name="text">
+                <string>R$ 0,00</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../recursos.qrc"/>
+ </resources>
+ <connections/>
+</ui>
