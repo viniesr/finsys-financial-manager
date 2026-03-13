@@ -1,2 +1,2 @@
-*.ui linguist-detectable=false
-*.qrc linguist-detectable=false
+*.ui linguist-generated=true
+*.qrc linguist-generated=true
